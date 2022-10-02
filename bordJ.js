@@ -20,3 +20,18 @@ BtnsRight.forEach((btn)=> {
         btn.parentElement.children[1].scrollBy(350, 0);
     })
 })
+
+// make fade effect with div adv
+let divAdvImgs = Array.from(document.querySelectorAll(".div-adv .image"));
+console.log(divAdvImgs[0]);
+let index = 1;
+let fadeDivAdv = setInterval(()=> {
+    divAdvImgs.forEach(img=> img.classList.remove("active"))
+    divAdvImgs[index-1].classList.add("active");
+    console.log(divAdvImgs[index -1]);
+    index++;
+    if (index == divAdvImgs.length + 1) {
+        index = 0;
+        index++;
+    }
+}, 10000)
