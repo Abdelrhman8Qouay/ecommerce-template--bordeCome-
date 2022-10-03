@@ -74,6 +74,7 @@
                     <span id="numProds">0</span>
                     <p>Cart</p>
                 </a>
+                <button class="btnList"><ion-icon name="list"></ion-icon></button>
             </div>
         </div>
         <div class="down-header">
@@ -87,7 +88,7 @@
                     <li><a href="#">Technology</a></li>
                     <li><a href="#">Accessories</a></li>
                     <li class="drop">
-                        <a href="#">More</a>
+                        <a href="#">More <ion-icon name="caret-down"></ion-icon></a>
                         <ul>
                             <li><a href="#">Contact</a></li>
                             <li><a href="#">Services</a></li>
@@ -96,6 +97,7 @@
                     </li>
                 </ul>
             </div>
+            <button id="btnListSide"><ion-icon name="list"></ion-icon></button>
         </div>
     </header>
     <!-- End Header  -->
@@ -255,16 +257,34 @@
                     <img src="https://m.media-amazon.com/images/I/71GIRogtyNL._AC_SY200_.jpg" alt="product">
                 </a>
                 <a href="#">
-                    <img src="https://m.media-amazon.com/images/I/71GIRogtyNL._AC_SY200_.jpg" alt="product">
+                    <img src="https://m.media-amazon.com/images/I/71ypFDEgNeL._AC_SY200_.jpg" alt="product">
                 </a>
                 <a href="#">
-                    <img src="https://m.media-amazon.com/images/I/71GIRogtyNL._AC_SY200_.jpg" alt="product">
+                    <img src="https://m.media-amazon.com/images/I/51f2hkWjTlL._AC_SY200_.jpg" alt="product">
                 </a>
                 <a href="#">
-                    <img src="https://m.media-amazon.com/images/I/71GIRogtyNL._AC_SY200_.jpg" alt="product">
+                    <img src="https://m.media-amazon.com/images/I/81EdWZ0C95L._AC_SY200_.jpg" alt="product">
                 </a>
                 <a href="#">
-                    <img src="https://m.media-amazon.com/images/I/71GIRogtyNL._AC_SY200_.jpg" alt="product">
+                    <img src="https://m.media-amazon.com/images/I/61Cr8XDD6JL._AC_SY200_.jpg" alt="product">
+                </a>
+                <a href="#">
+                    <img src="https://m.media-amazon.com/images/I/51P5WGxMzeL._AC_SY200_.jpg" alt="product">
+                </a>
+                <a href="#">
+                    <img src="https://m.media-amazon.com/images/I/61lzum+9qCL._AC_SY200_.jpg" alt="product">
+                </a>
+                <a href="#">
+                    <img src="https://m.media-amazon.com/images/I/61Ei0ywt1lL._AC_SY200_.jpg" alt="product">
+                </a>
+                <a href="#">
+                    <img src="https://m.media-amazon.com/images/I/71VfR7Xhk8L._AC_SY200_.jpg" alt="product">
+                </a>
+                <a href="#">
+                    <img src="https://m.media-amazon.com/images/I/51LbXCEndSL._AC_SY200_.jpg" alt="product">
+                </a>
+                <a href="#">
+                    <img src="https://m.media-amazon.com/images/I/71ICfUvvEyL._AC_SY200_.jpg" alt="product">
                 </a>
             </div>
             <button class="scrL scrollBtn" type="button">
@@ -281,21 +301,23 @@
 
         <!-- Start adv section  -->
         <div class="div-adv my-5">
-            <a href="#">
-                <div class="image">
-                    <img src="https://image.oppo.com/content/dam/oppo/common/support/premium/reno-find-series/PC-reno-find-series-entrance.jpg" alt="full advertisements">
-                </div>
-            </a>
-            <a href="#">
-                <div class="image">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrxN7GgGGSVRaRLUPFT7n2g2zZCcIMtMk-F_uzaTFE42ABVjSm0H_P_8bpAIHHeEYgA9Q&usqp=CAU" alt="full advertisements">
-                </div>
-            </a>
-            <a href="#">
-                <div class="image">
-                    <img src="https://c.tenor.com/7BGpramsvIcAAAAd/playstation5-ps5.gif" alt="full advertisements">
-                </div>
-            </a>
+            <div class="content">
+                <a href="#">
+                    <div class="image active">
+                        <img src="https://image.oppo.com/content/dam/oppo/common/support/premium/reno-find-series/PC-reno-find-series-entrance.jpg" alt="full advertisements">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="image">
+                        <img src="https://www.audi.com/content/dam/ci/Guides/Communication_Media/Advertisements/01_Intro/Header.png" alt="full advertisements">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="image">
+                        <img src="https://c.tenor.com/7BGpramsvIcAAAAd/playstation5-ps5.gif" alt="full advertisements">
+                    </div>
+                </a>
+            </div>
         </div>
         <!-- End adv section  -->
 
@@ -590,6 +612,14 @@
         </div>
     </div>
 
+    <!-- Start Sign -->
+    <div class="signGet">
+        <p>See personalized recommendations</p>
+        <a id="sign" href="#">Sign in</a>
+        <span>New customer?<a class="big" href="#">Start here</a></span>
+    </div>
+    <!-- End Sign  -->
+
 
     <!-- Footer -->
 <footer class="bg-dark text-center text-white">
@@ -662,11 +692,7 @@
 
       <!-- Section: Text -->
       <section class="mb-4">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-          eum harum corrupti dicta, aliquam sequi voluptate quas.
-        </p>
+        <hr class="bg-light">
       </section>
       <!-- Section: Text -->
 

@@ -4,6 +4,18 @@ btnMode.addEventListener('click', ()=> {
     document.body.classList.toggle("darkMode");
 })
 
+// make active class for rest buttons of page
+let btnList = document.querySelector(".content-search .btnList");
+let MakeList = document.querySelector("header .down-header");
+btnList.addEventListener('click', ()=> {
+    MakeList.classList.toggle("active");
+})
+let btnListSide = document.getElementById("btnListSide")
+btnListSide.addEventListener('click', ()=> {
+    MakeList.classList.toggle("active");
+})
+
+
 // add methods of scrolling for buttons with left and right
 // let BigScrollDivs = document.querySelectorAll(".top-sellers-div .content");
 
@@ -23,15 +35,14 @@ BtnsRight.forEach((btn)=> {
 
 // make fade effect with div adv
 let divAdvImgs = Array.from(document.querySelectorAll(".div-adv .image"));
-console.log(divAdvImgs[0]);
-let index = 1;
+let index = 0;
 let fadeDivAdv = setInterval(()=> {
-    divAdvImgs.forEach(img=> img.classList.remove("active"))
-    divAdvImgs[index-1].classList.add("active");
-    console.log(divAdvImgs[index -1]);
+    divAdvImgs.forEach(img=> img.classList.remove("active"));
+
+    divAdvImgs[index].classList.add("active");
     index++;
-    if (index == divAdvImgs.length + 1) {
+
+    if (index >= divAdvImgs.length) {
         index = 0;
-        index++;
     }
-}, 10000)
+}, 8000);
